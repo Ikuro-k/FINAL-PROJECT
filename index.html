@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Final Project</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Mapbox files -->
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+        <!-- My CSS file -->
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <div class="headerbar">
+            <div class="pagecontent">
+                <div class="wrapper">
+        <section>
+            <div>
+            <h2 id="heading" style="text-align: center;">Examining Food Security and drought mitigation in Africa using Geospatial Data and Analysis</h2>
+            <h3 style="text-align: center;">Vegetation and water bodies map</h3>
+            <p>The first map shows the distribution of vegetation and water bodies in Africa. The legend in the bottom right corner explains the different colors and symbols used in the map.</p>
+            
+            <!-- Initialize Map -->
+            
+            <div id="map"></div>
+            <br>
+            
+            <!-- Adding a legend at the bottom right part of the page. -->
+            <div id='legend'>
+                <nav id="menu"></nav>
+                <br/>
+                <h4>Key</h4>
+                <ul>
+                    <li><hr class="class1"> Vegetation Contours</li>
+                    <li><hr class="class2"> Water Body</li>
+                </ul>
+                
+            </div>
+            
+            </div>
+
+            <div>
+                <h3 style="text-align: center;">Agro-ecological Zones in Africa</h3>
+                <p>The second map shows the different agri-ecological zones in Africa. This map is used to illustrate the different types of environments that are found in the continent, and how they may be affected by drought.</p>
+                <div id='map2' style='width: 100%; height: 500px;'></div>
+        </div>
+        <div>
+            <h3>Rainfall data</h3>
+            <p>The next section of the storymap includes two figures that show the available rainfall data. The first figure shows the locations of the rainfall stations, while the second figure shows the number of stations available in each year.</p>
+            <p style="text-align: center;">Fig. 1. Map of available rainfall stations. Black = original data set, red = new stations..</p>
+            
+            <img src='/data/stations.jpg' height="500px" width="60%"/>
+            <p style="text-align: center;">Fig. 2. Number of stations available in each year. The dark area shows current number of stations per year; lighter shading shows the number of stations in each year in the prior data set.</p>
+            <img src='/data/rain.jpg' height="500px" width="80%"/>
+        </div>
+        <div>
+            <h3>Red alert drought in Eastern Africa</h3>
+            <p>The final map shows the area of the red alert drought that occurred in Eastern Africa in 2019. This map is used to illustrate the extent of the drought and its impact on food security in the region.</p>
+            <div id='map3' style='width: 100%; height: 500px;'></div>
+    </div>
+    <br>
+    <br>
+    <div id="references">
+        <h3>References and Data Utilized in These Maps</h3>
+        <ul>
+            <li>1. http://geoportal.rcmrd.org/layers/servir%3Aafrica_agroecological_zoning</li>
+            <li>2. https://www.sciencedirect.com/science/article/pii/S0921818117302783</li>
+            <li>3. https://www.gdacs.org/resources.aspx?eventid=1013021&episodeid=6&eventtype=DR</li>
+            <li>4. https://storymaps.arcgis.com/stories/c3121e658e7b4f019cbff8bff45d1f43</li>
+            <li>5. https://www.africageoportal.com/datasets/africageoportal::africa-farming-systems/explore</li>
+        </ul>
+    </div>
+
+
+            
+        </section>
+        </div>
+        </div>
+    </div>
+        <!-- My JS file -->
+        <script src="script.js"></script>
+    </body>
+</html>
